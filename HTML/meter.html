@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="meterstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("#navbarContainer").load("/Navbar/navbar.html");
+    });
+  </script>
+</head>
+
+<body>
+
+  <div id="navbarContainer"></div>
+
+  <div class="container">
+    <h1>meter-tag</h1>
+
+    <!-- CSS-boks -->
+    <div style="border: 1px solid #ccc; padding: 10px;">
+      <h5>css</h5>
+      <pre>
+      meter {
+      width: 400px;
+      height: 25px;
+    }
+      </pre>
+    </div>
+    <br>
+
+
+
+    <h3>Value 0</h3>
+    <meter max="100" min="0" value="0" low="40" high="70" optimum="50"></meter>
+    <!-- HTML-boks -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+      <h5>HTML</h5>
+      <pre>&lt;meter max="100" min="0" value="0" low="40" high="70" optimum="50"&gt;&lt;/meter&gt;</pre>
+    </div>
+    <br>
+
+    <h3>Value 33</h3>
+    <meter max="100" min="0" value="33" low="40" high="70" optimum="50"></meter>
+    <!-- HTML-boks -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+      <h5>HTML</h5>
+      <pre>&lt;meter max="100" min="0" value="33" low="40" high="70" optimum="50"&gt;&lt;/meter&gt;</pre>
+    </div>
+    <br>
+
+    <h3>Value 66</h3>
+    <meter max="100" min="0" value="66" low="40" high="70" optimum="50"></meter>
+    <!-- HTML-boks -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+      <h5>HTML</h5>
+      <pre>&lt;meter max="100" min="0" value="66" low="40" high="70" optimum="50"&gt;&lt;/meter&gt;</pre>
+    </div>
+    <br>
+
+
+    <h3>Value 100</h3>
+    <meter max="100" min="0" value="100" low="40" high="70" optimum="0"></meter>
+    <!-- HTML-boks -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+      <h5>HTML</h5>
+      <pre>&lt;meter max="100" min="0" value="100" low="40" high="70" optimum="0"&gt;&lt;/meter&gt;</pre>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="#">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("#navbarContainer").load("/Navbar/navbar.html");
+    });
+  </script>
+</head>
+
+<body>
+
+  <div id="navbarContainer"></div>
+    <div class="container">
+      <h3>Native HTML search</h3>
+      <input list="items">
+
+      <datalist id="items">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="PHP">
+        <option value="Python">
+        <option value="jQuery">
+      </datalist>
+    <br>
+    <br>
+
+
+
+    <!-- HTML-boks -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+      <h5>HTML</h5>
+      <pre>
+          &lt;input list="items"&gt;
+          &lt;datalist id="items"&gt;
+              &lt;option value="HTML"&gt;
+              &lt;option value="CSS"&gt;
+              &lt;option value="JavaScript"&gt;
+              &lt;option value="PHP"&gt;
+              &lt;option value="Python"&gt;
+              &lt;option value="jQuery"&gt;
+          &lt;/datalist&gt;
+      </pre>
+    </div>
+  </div>
+  
+</body>
+
+</html>
